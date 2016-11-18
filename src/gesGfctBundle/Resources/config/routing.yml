@@ -17,3 +17,8 @@ exito_empresa:
 alumno_tabla:
     path:     /alumno/all
     defaults: { _controller: gesGfctBundle:alumno:all }
+
+api:
+    path:     /empresa
+    defaults: { _controller: gesGfctBundle:api:empresas }
+    methods: [GET]

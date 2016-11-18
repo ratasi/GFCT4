@@ -20,27 +20,27 @@ class empresaType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('nombre',TextType::class,array('label'=>'Nombre Empresa',
+            ->add('nombre',TextType::class,array('label'=>'Nombre Empresa : ',
             'label_attr'=>array('class'=>'labelEmp'),
             'attr'=>array('class'=>'nomEmp')))
 
-            ->add('direccion',TextType::class,array('label'=>'Direccion Empresa',
+            ->add('direccion',TextType::class,array('label'=>'Direccion : ',
             'label_attr'=>array('class'=>'labelEmp'),
             'attr'=>array('class'=>'dirEmp')))
 
-            ->add('cp',IntegerType::class,array('label'=>'CodigoPostal Empresa',
+            ->add('cp',IntegerType::class,array('label'=>'Codigo Postal : ',
             'label_attr'=>array('class'=>'labelEmp'),
             'attr'=>array('class'=>'cpEmp')))
 
-            ->add('telefono1',IntegerType::class,array('label'=>'Primer telefono',
+            ->add('telefono1',IntegerType::class,array('label'=>'Primer teléfono : ',
             'label_attr'=>array('class'=>'labelEmp'),
             'attr'=>array('class'=>'telfEmp')))
 
-            ->add('telefono2',IntegerType::class,array('label'=>'Segundo telefono',
+            ->add('telefono2',IntegerType::class,array('label'=>'Segundo teléfono : ',
             'label_attr'=>array('class'=>'labelEmp'),
             'attr'=>array('class'=>'telfEmp2')))
 
-            ->add('fechaCreacion',DateType::class,array('label'=>'Fecha de Creacion',
+            ->add('fechaCreacion',DateType::class,array('label'=>'Fecha de creacion : ',
             'label_attr'=>array('class'=>'labelEmp'),
             'attr'=>array('class'=>'fechaEmp')))
 

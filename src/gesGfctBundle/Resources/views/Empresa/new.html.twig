@@ -1,17 +1,9 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Nuevo Formulario </title>
-    <h1>Insertar datos en el formulario</h1>
-
-    {% block stylesheets %}
-     <link rel="stylesheet" type="text/css" href="{{asset('css/estilosForm.css')}}">
-     {% endblock %}
-  </head>
+{% extends '::base.html.twig' %}
+{% block body %}
+<div class="panel panel-default">
+  <div class="panel-heading">Panel de creación de empresa</div>
   <body>
     <div class="contenedor">
     {{form(formulario)}}
     </div>
-  </body>
-</html>
+{% endblock %}
